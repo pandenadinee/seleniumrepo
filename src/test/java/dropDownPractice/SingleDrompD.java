@@ -24,18 +24,12 @@ public class SingleDrompD {
 
 //        s.selectByVisibleText("doc 3");
         s.selectByIndex(3);
+
        boolean result =  s.isMultiple();
+
         System.out.println(result);
-
-
-
         s.getOptions();
-
-
-
         Thread.sleep(3000);
         driver.close();
-
-
     }
 }
