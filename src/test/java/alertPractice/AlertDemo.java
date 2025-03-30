@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class AlertDemo {
 
-    @Test
+    @Test(priority =  5, description = "this is updated code")
     public void m1() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
