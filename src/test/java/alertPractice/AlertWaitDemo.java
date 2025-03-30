@@ -16,12 +16,14 @@ public class AlertWaitDemo {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
         driver.get("https://omayo.blogspot.com/");
 
         driver.findElement(By.id("alert2")).click();
-        WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        Alert until = wait.until(ExpectedConditions.alertIsPresent());
-
-        until.accept();
+//        WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        Alert until = wait.until(ExpectedConditions.alertIsPresent());
+//
+//        until.accept();
     }
 }
