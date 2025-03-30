@@ -23,5 +23,6 @@ public class AlertWaitDemo {
         Alert until = wait.until(ExpectedConditions.alertIsPresent());
 
         until.accept();
+        driver.close();
     }
 }
