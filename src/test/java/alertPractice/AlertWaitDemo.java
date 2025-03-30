@@ -25,5 +25,10 @@ public class AlertWaitDemo {
 //        Alert until = wait.until(ExpectedConditions.alertIsPresent());
 //
 //        until.accept();
+        WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        Alert until = wait.until(ExpectedConditions.alertIsPresent());
+
+        until.accept();
+        driver.close();
     }
 }
