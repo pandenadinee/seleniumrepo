@@ -13,7 +13,7 @@ public class FrameDemoPractice {
         driver.manage().window().maximize();
         driver.get("https://demoqa.com/frames");
         WebElement ele = driver.findElement(By.xpath("//iframe[@id='frame1']"));
-//        driver.switchTo().frame(ele);
+        driver.switchTo().frame(ele);
         WebElement element = driver.findElement(By.xpath("//h1[text()='This is a sample page']"));
        String s =  element.getText();
         System.out.println(s);
