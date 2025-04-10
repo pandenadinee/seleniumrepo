@@ -7,7 +7,7 @@ public class Demo1 {
     public void m1(){
         System.out.println("conflict demo practice");
         int n = 20;
-        for(int i = 2; i<=n; i=i+2){
+        for(int i = 2; i<=n; i;){
             System.out.println(i);
         }
 
