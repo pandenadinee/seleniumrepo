@@ -1,6 +1,6 @@
 package ActionsClassDemo;
 
-import org.checkerframework.checker.units.qual.K;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
